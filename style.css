@@ -1,0 +1,630 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =====================================================
+                       TOP BAR
+===================================================== */
+
+.topbar {
+    width: 100%;
+    height: 64px;
+
+    background-color: #000;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 18px;
+
+    gap: 12px;
+}
+
+
+/* =====================================================
+                    SPOTIFY LOGO
+===================================================== */
+
+.spotify-logo {
+    width: 58px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.spotify-logo-circle {
+    width: 34px;
+    height: 34px;
+
+    background-color: #1ed760;
+
+    border-radius: 50%;
+
+    position: relative;
+}
+
+
+/* Spotify 3 lines */
+
+.spotify-line {
+    position: absolute;
+
+    height: 3px;
+
+    background-color: #000;
+
+    border-radius: 10px;
+
+    transform: rotate(5deg);
+}
+
+.line-1 {
+    width: 21px;
+
+    top: 10px;
+    left: 6px;
+}
+
+.line-2 {
+    width: 18px;
+
+    top: 16px;
+    left: 7px;
+}
+
+.line-3 {
+    width: 14px;
+
+    top: 22px;
+    left: 9px;
+}
+
+
+/* =====================================================
+                     HOME BUTTON
+===================================================== */
+
+.home-button {
+    width: 60px;
+    height: 60px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #1f1f1f;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.home-button:hover {
+    background-color: #2a2a2a;
+}
+
+
+/* Home icon */
+
+.home-icon {
+    width: 28px;
+    height: 28px;
+
+    position: relative;
+}
+
+
+/* Roof */
+
+.home-roof {
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: white;
+
+    transform: rotate(45deg);
+
+    top: 2px;
+    left: 4px;
+
+    border-radius: 3px;
+}
+
+
+/* House */
+
+.home-house {
+    position: absolute;
+
+    width: 20px;
+    height: 16px;
+
+    background-color: white;
+
+    left: 4px;
+    bottom: 2px;
+}
+
+
+/* Door */
+
+.home-door {
+    position: absolute;
+
+    width: 5px;
+    height: 9px;
+
+    background-color: #1f1f1f;
+
+    left: 11px;
+    bottom: 2px;
+
+    z-index: 2;
+}
+
+
+/* =====================================================
+                     SEARCH BAR
+===================================================== */
+
+.search-bar {
+    width: 490px;
+    height: 52px;
+
+    background-color: #1f1f1f;
+
+    border-radius: 28px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 17px;
+
+    flex-shrink: 0;
+}
+
+.search-bar:hover {
+    background-color: #292929;
+}
+
+
+/* Search icon */
+
+.search-icon {
+    width: 21px;
+    height: 21px;
+
+    border: 2px solid #b3b3b3;
+
+    border-radius: 50%;
+
+    position: relative;
+
+    margin-right: 14px;
+
+    flex-shrink: 0;
+}
+
+
+/* Search handle */
+
+.search-icon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+    height: 2px;
+
+    background-color: #b3b3b3;
+
+    right: -6px;
+    bottom: -3px;
+
+    transform: rotate(45deg);
+
+    border-radius: 5px;
+}
+
+
+/* Search input */
+
+.search-bar input {
+    width: 100%;
+    height: 100%;
+
+    background: transparent;
+
+    border: none;
+    outline: none;
+
+    color: white;
+
+    font-size: 16px;
+}
+
+.search-bar input::placeholder {
+    color: #b3b3b3;
+}
+
+
+/* Divider */
+
+.search-divider {
+    width: 1px;
+    height: 28px;
+
+    background-color: #555;
+
+    margin-right: 14px;
+}
+
+
+/* Browse icon */
+
+.browse-icon {
+    color: #b3b3b3;
+
+    font-size: 21px;
+
+    width: 24px;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/* =====================================================
+                     RIGHT SIDE
+===================================================== */
+
+.top-right {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 22px;
+
+    white-space: nowrap;
+}
+
+
+
+.premium-button {
+    background-color: white;
+
+    color: black;
+
+    border: none;
+
+    border-radius: 25px;
+
+    padding: 12px 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.premium-button:hover {
+    transform: scale(1.03);
+}
+
+
+/* Install App */
+
+.install-app {
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* Notification */
+
+.notification {
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+
+/* Profile */
+
+.profile {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    background-color: #e78b55;
+
+    color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    flex-shrink: 0;
+}
+
+
+/* =====================================================
+                  BELOW TOP BAR
+===================================================== */
+
+.container {
+    display: flex;
+
+    width: 100%;
+
+    height: calc(100vh - 64px);
+
+    gap: 8px;
+
+    padding: 0 8px 8px;
+}
+
+
+/* Left */
+
+.left {
+    width: 280px;
+
+    background-color: #121212;
+
+    border-radius: 8px;
+
+    padding: 20px;
+}
+
+
+/* Right */
+
+.right {
+    flex: 1;
+
+    background-color: #121212;
+
+    border-radius: 8px;
+
+    padding: 30px;
+}
+
+
+/* Library */
+
+.library {
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.heading {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding-top: 14px;
+    padding: 23px 14px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+}
+
+.heading img {
+    width: 30px;
+    
+}
+
+.install-app {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-right: 10px;
+   
+    top: 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2000px;
+}
+
+.buttons img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.music-card {
+    width: 180px;
+    background-color: #252525;
+    position: relative;
+}
+
+.card-container {
+  
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+.music-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+  
+}
+
+.music-card h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.music-card p {
+    margin-top: 5px;
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.play{
+    width: 40px;
+    height: 40px;
+    background-color: #1fdf64;
+    border-radius: 50%;
+   
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 130px;
+    right: 14px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3f3f3f;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5a5a5a;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Common buttons */
+.buttons button {
+    border: none;
+    outline: none;
+    border-radius: 60px;       /* fully round */
+    padding: 8px 17px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: 
+        transform 0.2s ease,
+        font-size 0.2s ease,
+        background-color 0.2s ease;
+}
+
+/* ALL */
+.Allbtn {
+    background-color: #1ed760;
+    color: #000;
+}
+
+/* MUSIC */
+.Musicbtn {
+    background-color: #fff;
+    color: #000;
+}
+
+/* PODCAST */
+.Podcastbtn {
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* HOVER */
+.buttons button:hover {
+    transform: scale(1.08);
+    font-size: 15px;
+}
+
+.playbar{
+    position:absolute;
+    bottom: 0;
+    background-color: rgb(139, 193, 139,);
+    width: 100%;
+    padding: 12px;
+}
+
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Previous & Next */
+.songbuttons img {
+    width: 32px;
+    height:31px ;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Play button */
+.songbuttons img:nth-child(2) {
+    width: 48px;
+    height: 48px;
+}
+
+/* Hover effect */
+.songbuttons img:hover {
+    transform: scale(1.12);
+}
